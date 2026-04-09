@@ -359,6 +359,11 @@ section{padding:6rem 5%;position:relative;z-index:1;}
   background:rgba(255,255,255,.02);color:var(--soft);
   border:1px solid var(--border);
 }
+.pb-demo{
+  background:rgba(251,191,36,.08);color:var(--amber);
+  border:1px solid rgba(251,191,36,.2);
+}
+.pb-demo:hover{background:var(--amber);color:#000;}
 .pb-gh:hover{color:var(--text);border-color:rgba(255,255,255,.12);}
 
 /* ── SKILLS ── */
@@ -544,7 +549,7 @@ footer a{color:var(--indigo);text-decoration:none;}
 
     <div class="about-body fade d2">
       <p>I'm <strong>Karthikeyan</strong>, a History graduate from Chennai who made a deliberate pivot into tech at exactly the right moment. While everyone around me was just talking about AI, I decided to start building with it.</p>
-      <p>In the last few months, I self-taught <strong>Python basics</strong>, explored automation tools like <strong>Botpress and n8n</strong>, and shipped two real, live projects — a full e-commerce web app and a smart personal finance tracker.</p>
+      <p>In the last few months, I self-taught <strong>Python basics</strong>, explored automation tools like <strong>Botpress and n8n</strong>, and shipped four real deployed projects — an e-commerce app, a bank statement analyzer, a production RAG chatbot, and an AI video editing agent that controls DaVinci Resolve through plain English.</p>
       <p>I use <strong>AI as a co-pilot</strong> to build faster and smarter — and I think that's exactly the skill that matters in 2025. I'm curious, fast-learning, and I care about building things that actually work.</p>
 
       <div class="edu-card">
@@ -608,22 +613,43 @@ footer a{color:var(--indigo);text-decoration:none;}
       </div>
     </div>
 
-    <div class="proj-card fade d3">
-      <div class="proj-glow"></div>
-      <div class="proj-num">03 · Project</div>
+    <div class="proj-num">03 · Project</div>
       <h3 class="proj-title">Spice Garden AI Chatbot</h3>
-      <p class="proj-desc">A fully functional AI-powered restaurant chatbot for "Spice Garden" built on Botpress. Priya handles menu queries, takes table reservations with a complete booking flow, answers FAQs, and gracefully manages off-topic inputs — all in a conversational, friendly tone.</p>
+      <p class="proj-desc">A production RAG chatbot for a restaurant — handles bookings, cancellations, and menu queries using semantic search. Built with Flask, Groq LLM, Supabase (pgvector), and fastembed. Sends HTML confirmation emails via Gmail and logs all bookings to Google Sheets automatically.</p>
       <div class="tags">
-        <span class="tag">Botpress</span>
-        <span class="tag">AI Chatbot</span>
-        <span class="tag">NLP</span>
-        <span class="tag">Conversational AI</span>
+        <span class="tag">Python</span>
+        <span class="tag">Flask</span>
+        <span class="tag">RAG</span>
+        <span class="tag">Groq</span>
+        <span class="tag">Supabase</span>
+        <span class="tag">pgvector</span>
       </div>
-      <div class="proj-btns">
+    
+    <div class="proj-btns">
         <a href="https://spice-garden-amp4.onrender.com" target="_blank" rel="noopener" class="pb pb-live">↗ Live Demo</a>
       </div>
     </div>
+
+    <div class="proj-card fade d4">
+      <div class="proj-glow"></div>
+      <div class="proj-num">04 · Project</div>
+      <h3 class="proj-title">EDITA</h3>
+      <p class="proj-desc">An AI video editing agent that controls DaVinci Resolve 20 through plain English commands. Type "add a title" or "zoom in" — EDITA understands and executes it directly on the timeline. Built with Flask, Groq LLM, and DaVinci Resolve's Python API.</p>
+      <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">Flask</span>
+        <span class="tag">Groq</span>
+        <span class="tag">AI Agent</span>
+        <span class="tag">DaVinci Resolve API</span>
+      </div>
+      <div class="proj-btns">
+        <a href="YOUR_YOUTUBE_LINK_HERE" target="_blank" rel="noopener" class="pb pb-demo">▶ Watch Demo</a>
+        <a href="https://github.com/karthikkeyan63365-cyber" target="_blank" rel="noopener" class="pb pb-gh">GitHub →</a>
+      </div>
+    </div>
+
   </div>
+</section>
 </section>
 
 <!-- SKILLS -->
